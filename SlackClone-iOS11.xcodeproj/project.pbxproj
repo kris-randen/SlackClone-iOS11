@@ -12,6 +12,7 @@
 		0DAE09131FE20B1400FC23F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE09111FE20B1400FC23F9 /* Main.storyboard */; };
 		0DAE09151FE20B1400FC23F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE09141FE20B1400FC23F9 /* Assets.xcassets */; };
 		0DAE09181FE20B1400FC23F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE09161FE20B1400FC23F9 /* LaunchScreen.storyboard */; };
+		ABE6889F72F316973D8E68A6 /* Pods_SlackClone_iOS11.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A381DA2944CAB745896A171F /* Pods_SlackClone_iOS11.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0DAE09141FE20B1400FC23F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DAE09171FE20B1400FC23F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DAE09191FE20B1400FC23F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B261103AFC39B34F51F62F8 /* Pods-SlackClone-iOS11.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClone-iOS11.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClone-iOS11/Pods-SlackClone-iOS11.debug.xcconfig"; sourceTree = "<group>"; };
+		A381DA2944CAB745896A171F /* Pods_SlackClone_iOS11.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackClone_iOS11.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA30ED793828FA8D6191481D /* Pods-SlackClone-iOS11.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClone-iOS11.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClone-iOS11/Pods-SlackClone-iOS11.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE6889F72F316973D8E68A6 /* Pods_SlackClone_iOS11.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0DAE090C1FE20B1400FC23F9 /* SlackClone-iOS11 */,
 				0DAE090B1FE20B1400FC23F9 /* Products */,
+				68DAC51110E25C222DAB7C1B /* Pods */,
+				CCE24749DAD44CF53562D2C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "SlackClone-iOS11";
 			sourceTree = "<group>";
 		};
+		68DAC51110E25C222DAB7C1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B261103AFC39B34F51F62F8 /* Pods-SlackClone-iOS11.debug.xcconfig */,
+				CA30ED793828FA8D6191481D /* Pods-SlackClone-iOS11.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCE24749DAD44CF53562D2C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A381DA2944CAB745896A171F /* Pods_SlackClone_iOS11.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DAE091C1FE20B1400FC23F9 /* Build configuration list for PBXNativeTarget "SlackClone-iOS11" */;
 			buildPhases = (
+				79A679C8B4285E9BA8DA1A49 /* [CP] Check Pods Manifest.lock */,
 				0DAE09061FE20B1400FC23F9 /* Sources */,
 				0DAE09071FE20B1400FC23F9 /* Frameworks */,
 				0DAE09081FE20B1400FC23F9 /* Resources */,
+				78907B07B730D837A37313ED /* [CP] Embed Pods Frameworks */,
+				EC4DEA754846B1B2A0DC67E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78907B07B730D837A37313ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackClone-iOS11/Pods-SlackClone-iOS11-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79A679C8B4285E9BA8DA1A49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4DEA754846B1B2A0DC67E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackClone-iOS11/Pods-SlackClone-iOS11-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0DAE09061FE20B1400FC23F9 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		0DAE091D1FE20B1400FC23F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B261103AFC39B34F51F62F8 /* Pods-SlackClone-iOS11.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +363,7 @@
 		};
 		0DAE091E1FE20B1400FC23F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA30ED793828FA8D6191481D /* Pods-SlackClone-iOS11.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
