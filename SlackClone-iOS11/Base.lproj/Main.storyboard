@@ -20,9 +20,83 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="3lt-dQ-soS" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="omc-EB-Jx4"/>
+                        <segue destination="xbA-EB-FkE" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="5W0-jl-7rm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--ChannelVC-->
+        <scene sceneID="D2f-82-B1q">
+            <objects>
+                <viewController id="3lt-dQ-soS" customClass="ChannelVC" customModule="SlackClone_iOS11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yge-ZM-yxy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0YE-0X-Xhn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bl1-o8-HyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678" y="-268"/>
+        </scene>
+        <!--ChatVC-->
+        <scene sceneID="vKo-E4-RUw">
+            <objects>
+                <viewController id="xbA-EB-FkE" customClass="ChatVC" customModule="SlackClone_iOS11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yAG-aX-y9J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bz-Qp-k7a">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59j-se-Vwb">
+                                        <rect key="frame" x="12" y="47" width="24" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="NhY-Sf-zgH"/>
+                                            <constraint firstAttribute="height" constant="18" id="pTe-BQ-U0H"/>
+                                        </constraints>
+                                        <state key="normal" image="smackBurger"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcU-RC-kog">
+                                        <rect key="frame" x="161.5" y="45.5" width="52" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29019607843137252" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="Wmh-rR-6vg"/>
+                                    <constraint firstItem="59j-se-Vwb" firstAttribute="leading" secondItem="5bz-Qp-k7a" secondAttribute="leading" constant="12" id="Zey-ow-iwF"/>
+                                    <constraint firstItem="HcU-RC-kog" firstAttribute="centerY" secondItem="59j-se-Vwb" secondAttribute="centerY" id="ehB-49-UCL"/>
+                                    <constraint firstItem="HcU-RC-kog" firstAttribute="centerX" secondItem="5bz-Qp-k7a" secondAttribute="centerX" id="tam-X9-9IT"/>
+                                    <constraint firstAttribute="bottom" secondItem="59j-se-Vwb" secondAttribute="bottom" constant="12" id="uFE-TR-FvE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5bz-Qp-k7a" firstAttribute="top" secondItem="yAG-aX-y9J" secondAttribute="top" id="MZ6-RR-RBB"/>
+                            <constraint firstItem="5bz-Qp-k7a" firstAttribute="trailing" secondItem="MNB-FL-k8Y" secondAttribute="trailing" id="XGs-5j-aaG"/>
+                            <constraint firstItem="5bz-Qp-k7a" firstAttribute="leading" secondItem="MNB-FL-k8Y" secondAttribute="leading" id="bsu-T8-7u4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MNB-FL-k8Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuButton" destination="59j-se-Vwb" id="u8V-Y1-L1B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NnK-30-MJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678" y="575"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="smackBurger" width="40" height="40"/>
+    </resources>
 </document>
